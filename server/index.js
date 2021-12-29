@@ -6,7 +6,7 @@ const path = require("path");
 app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 app.get("/api", (req, res) => {
-    res.json({ message: "Hello from server!" });
+    res.json({ message: "Site Under Contruction." });
   });
 
 app.listen(PORT, () => {
