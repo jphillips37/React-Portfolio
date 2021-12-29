@@ -6,6 +6,8 @@ import Web from './components/Web';
 import Desktop from './components/Desktop';
 import Error from './components/Error';
 import Navbar from './components/Navbar';
+//import React, { Component } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 function App() {
@@ -21,12 +23,12 @@ function App() {
     <>
       <header><Navbar /></header>
       <main>
-        <switch>
-          <Route path='/' component={Home} />
-          <Route path='/web' component={Web} />
-          <Route path='/destop' component={Desktop} />
+        <Routes>
+          <Route path="/" component={Home} />
+          <Route path="/web" component={Web} />
+          <Route path="/destop" component={Desktop} />
           <Route component={Error} />
-        </switch>
+        </Routes>
       </main>
     </>
 
