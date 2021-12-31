@@ -12,32 +12,31 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 function App() {
-  const [data, setData] = React.useState(null);
+  // const [data, setData] = React.useState(null);
 
-  React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  }, []);
+  // React.useEffect(() => {
+  //   fetch("/api")
+  //     .then((res) => res.json())
+  //     .then((data) => setData(data.message));
+  // }, []);
 
   return (
     <>
       <header>
         <Navbar />
-
       </header>
       <main>
         <Routes>
-          <Route path="/" component={Home} />
-          <Route path="/web" component={Web} />
-          <Route path="/destop" component={Desktop} />
-          <Route component={Error} />
+          <Route path="/" element={<Home />} />
+          <Route path="/web" element={<Web />} />
+          <Route path="/destop" element={<Desktop />} />
+          <Route element={<Error />} />
         </Routes>
       </main>
       <footer>
         <Footer />
       </footer>
-    </>
+    </> 
 
     // <div className="App">
     //   <header className="App-header">
