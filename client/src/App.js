@@ -29,7 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/web" element={<Web />} />
-          <Route path="/destop" element={<Desktop />} />
+          <Route path="/desktop" element={<Desktop />} />
           <Route element={<Error />} />
         </Routes>
       </main>

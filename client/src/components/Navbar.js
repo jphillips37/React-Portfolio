@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
     return(
         <>
-            <ul id="dropdown1" class="dropdown-content">
+            <ul id="dropdown1" className="dropdown-content">
                 <li><Link to="/">Home</Link>{/* <a href="/">Home</a> */}</li>
                 <li><Link to="/desktop">Desktop Apps</Link>{/*<a href="/desktop" class="truncate">Desktop Apps</a>*/}</li>
                 <li><Link to="/web">Web Development</Link>{/*<a href="/web" class="truncate">Web Development</a>*/}</li>
@@ -14,7 +14,7 @@ function Navbar() {
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
                         <li><a href="/">Home</a></li>
                         <li><a href="/desktop">Desktop Apps</a></li>
-                        <li className="active"><a href="/web">Web Development</a></li>
+                        <li><a href="/web">Web Development</a></li>
                     </ul>
                     <ul id="nav-mobile" className="right hide-on-large-only">
                         <li><a className="dropdown-trigger" href="#!" data-target="dropdown1"><i className="material-icons right">dehaze</i></a></li>
